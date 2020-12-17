@@ -1,0 +1,153 @@
+.container-accordion {
+    background-color: #BEBEBE;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.container-elements-accordion {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.accordion {
+    background-color: #6F6F6F;
+    color: #444;
+    cursor: pointer;
+    display: flex;
+    padding: 2rem;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-size: 1.5rem;
+    color: #ffff;
+    font-weight: bold;
+    border-bottom: 2px solid #a1a0a0;
+    position: relative;
+    white-space: nowrap;
+}
+
+.column-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-pane {
+    width: 100%;
+    color: #6F6F6F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.fecharAccordion {
+    cursor: pointer;
+}
+
+.img-accordion {
+    width: 340px;
+    border: 10px solid #6F6F6F;
+    object-fit: cover;
+}
+
+.paragraph-accordion {
+    padding-top: 5rem;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    color: #6F6F6F;
+}
+
+.row-panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.btn-accordionOpen {
+    text-align: end;
+    width: 100%;
+}
+
+.row-panel-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width:770px) {
+    .row-panel-2 {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .paragraph-accordion {
+        padding: 0;
+        text-align: center;
+    }
+
+    .img-accordion {
+        width: 94%;
+        object-fit: cover;
+        border: 10px solid #6F6F6F;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .title-pane{
+        font-size: 1rem ;
+    }
+    .row-panel-2 {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    .img-accordion {
+        width: 94%;
+        object-fit: cover;
+        border: 10px solid #6F6F6F;
+    }
+
+    .container-accordion {
+        background-color: #BEBEBE;
+        display: flex;
+        padding: 0;
+        padding-top: 1rem;
+        padding-right: 1.6rem;
+        padding-bottom: 1rem;
+        padding-left: 0.4rem;
+    }
+
+    .container-elements-accordion {
+        width: 100%;
+    }
+
+    .accordion {
+        padding: 1rem;
+        padding-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+
+    .paragraph-accordion {
+        padding: 0;
+        text-align: center;
+    }
+}

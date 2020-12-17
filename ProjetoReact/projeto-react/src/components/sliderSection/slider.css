@@ -1,0 +1,181 @@
+.container-slider {
+    width: 100vw;
+    background-color: #454545;
+}
+
+.container-element-mobile {
+    display: none;
+}
+
+.container-item {
+    max-width: 1000px;
+    padding: 2rem 4rem;
+    margin: 0rem auto 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow-right {
+    margin-right: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow-left {
+    margin-left: 22px;
+    cursor: pointer;
+    outline: none;
+}
+
+.controles {
+    position: absolute;
+    left: 5px;
+    width: 100%;
+    border: none;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    border: 2px solid #454545;
+}
+
+.element {
+    padding: 1.5rem 1rem;
+    position: relative;
+}
+
+.container-element {
+    border-right: 4px solid #454545;
+    position: relative;
+}
+
+.slider-width {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.slider-img {
+    max-width: 100%;
+    border: 6px solid #6F6F6F;
+    position: relative;
+    object-fit: contain;
+}
+
+.text-slider {
+    overflow: hidden;
+    text-align: center;
+}
+
+.controles-mobile {
+    display: none;
+}
+
+.slider-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+
+.slider-subtitle {
+    display: flex;
+    font-size: 1rem;
+    color: #ffff;
+}
+
+.arrows-mobile {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .container-slider {
+        flex-direction: column;
+    }
+
+    .arrows-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .arrow-mobile-right {}
+
+    .arrow-mobile-left {
+        margin-right: 40px;
+    }
+
+    .controles {
+        display: none;
+    }
+
+    .controles-mobile {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container-item {
+        padding: 0;
+    }
+
+    .element {
+        padding: 0;
+        padding-right: 1rem;
+        padding-left: 0.2rem;
+        padding-top: 1rem;
+    }
+
+    .arrow-left-mobile {
+        margin-right: 25px;
+        width: 35px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .arrow-right-mobile {
+        width: 35px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .slider-title {
+        display: flex;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: #ffff;
+    }
+
+    .card {
+        padding-right: 13px;
+        padding-left: 9px;
+    }
+
+    .slider-subtitle {
+        display: flex;
+        font-size: 0.7rem;
+        color: #ffff;
+    }
+
+    .container-element-mobile {
+        display: block;
+    }
+
+    .container-element {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1145px) {}

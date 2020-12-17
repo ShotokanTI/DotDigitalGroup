@@ -1,0 +1,162 @@
+.container-background {
+    width: 100vw;
+    height: 450px;
+    background-color: #454545;
+    position: relative;
+}
+
+.container-background:after {
+    content: ' ';
+    border-top: 450px solid #6F6F6F;
+    border-right: 100vw solid transparent;
+    width: 0;
+    position: absolute;
+}
+
+.container-formulario {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+.formulario {
+    display: flex;
+    width: 89vw;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99999;
+}
+
+.container-email-telefone {
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+}
+.text-over-input{
+    display: flex;
+    padding: 0.9rem;
+    position: absolute;
+    pointer-events: none;
+}
+input {
+    background-color: #BEBEBE;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 1.5rem;
+    display: inline;
+    font-size: 1rem;
+}
+.Nome{
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding-left: 6px;
+}
+.subtitle{
+    font-size: 1.125rem;
+    font-weight: normal;
+    padding-left: 8px;
+    color: #707070;
+}
+.textarea-mensagem{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #BEBEBE;
+}
+.input-nome input:focus + .text-over-input,.input-nome input[required]:valid + .text-over-input,.input-nome input.not-empty + .text-over-input{
+    display: none;
+}
+.email input:focus + .text-over-input,.email input[required]:valid + .text-over-input,.email input.not-empty + .text-over-input{
+    display: none;
+}
+.telefone input:focus + .text-over-input,.telefone input[required]:valid + .text-over-input,.telefone input.not-empty + .text-over-input{
+    display: none;
+}
+.telefone input:focus + .text-over-input,.telefone input[required]:valid + .text-over-input,.telefone input.not-empty + .text-over-input{
+    display: none;
+}
+.container-mensagem textarea:focus + .text-over-input,.container-mensagem textarea[required]:valid + .text-over-input,.container-mensagem textarea.not-empty + .text-over-input{
+    display: none;
+}
+.input-nome{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 2rem;
+}
+.email {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.telefone {
+    display: flex;
+    width: 100%;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.container-mensagem {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 180px;
+    padding-top: 1rem;
+}
+
+.textarea-mensagem {
+    width: 100%;
+}
+
+.btn-form{
+    appearance: none;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size:1.3rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    height: 42px;
+    color: white;
+    background-color: #343434;
+}
+
+@media only screen and (max-width:600px) {
+
+    .container-email-telefone{
+        flex-direction: column;
+    }
+    .input-nome{
+        padding-top: 1rem;
+    }
+    .container-background{
+        height: 493px;
+    }
+    .formulario{
+        margin-right: 1rem;
+    }
+    .telefone{
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+}

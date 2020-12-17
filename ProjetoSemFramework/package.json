@@ -1,0 +1,23 @@
+{
+  "name": "projetosemframework",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.js",
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.6.1",
+    "gulp": "4.0.2",
+    "gulp-babel": "7.0.1",
+    "gulp-concat": "2.6.1",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
