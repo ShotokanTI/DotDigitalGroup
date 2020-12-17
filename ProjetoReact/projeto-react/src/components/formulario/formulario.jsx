@@ -93,7 +93,7 @@ function Formulario() {
                                     <span className="title">*Mensagem:</span><span className="subtitle">Escreva aqui</span>
                                 </div>
                             </div>
-                            <button className="btn-form" type="submit" onClick={validar}>Enviar</button>
+                            <button className="btn-form" type="button" onClick={validar}>Enviar</button>
                         </div>
                     </div>
                 </div>
